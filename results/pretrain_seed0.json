@@ -1,0 +1,91 @@
+{
+  "config": {
+    "steps": 1500,
+    "lr": 0.003,
+    "seed": 0,
+    "batch": 64,
+    "n_per_tier": 600,
+    "eval_every": 250,
+    "out": "results/base_seed0.npz",
+    "log": "results/pretrain_seed0.json"
+  },
+  "history": [
+    {
+      "step": 1,
+      "loss": 3.0066,
+      "acc": {
+        "easy": 0.0,
+        "medium": 0.0,
+        "hard": 0.031,
+        "all": 0.01
+      },
+      "wall_s": 0.3
+    },
+    {
+      "step": 250,
+      "loss": 0.7445,
+      "acc": {
+        "easy": 0.75,
+        "medium": 0.0,
+        "hard": 0.094,
+        "all": 0.281
+      },
+      "wall_s": 10.4
+    },
+    {
+      "step": 500,
+      "loss": 0.546,
+      "acc": {
+        "easy": 1.0,
+        "medium": 0.062,
+        "hard": 0.188,
+        "all": 0.417
+      },
+      "wall_s": 20.6
+    },
+    {
+      "step": 750,
+      "loss": 0.395,
+      "acc": {
+        "easy": 1.0,
+        "medium": 0.125,
+        "hard": 0.156,
+        "all": 0.427
+      },
+      "wall_s": 30.9
+    },
+    {
+      "step": 1000,
+      "loss": 0.3399,
+      "acc": {
+        "easy": 1.0,
+        "medium": 0.219,
+        "hard": 0.219,
+        "all": 0.479
+      },
+      "wall_s": 41.1
+    },
+    {
+      "step": 1250,
+      "loss": 0.318,
+      "acc": {
+        "easy": 0.969,
+        "medium": 0.062,
+        "hard": 0.25,
+        "all": 0.427
+      },
+      "wall_s": 51.3
+    },
+    {
+      "step": 1500,
+      "loss": 0.2414,
+      "acc": {
+        "easy": 1.0,
+        "medium": 0.312,
+        "hard": 0.281,
+        "all": 0.531
+      },
+      "wall_s": 61.4
+    }
+  ]
+}

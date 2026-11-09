@@ -1,0 +1,311 @@
+{
+  "config": {
+    "setting": "sft",
+    "lr": 0.001,
+    "seed": 0,
+    "steps": 200,
+    "base": "results/base_seed0.npz",
+    "batch": 32,
+    "group": 8,
+    "prompts_per_step": 12,
+    "b_mode": "adam",
+    "b_opt": "adam",
+    "eval_every": 100,
+    "diag_every": 10,
+    "out": "results/opt_sft_adam_0.001_seed0.json"
+  },
+  "history": [
+    {
+      "step": 1,
+      "loss": 0.5101,
+      "wall_s": 0.0,
+      "erank_mean": 5.7178049802959725,
+      "erank_per_adapter": {
+        "Wq": 5.9999,
+        "Wv": 4.9296,
+        "Wo": 4.97,
+        "W1": 6.9718
+      },
+      "ovlp_L_vs_step5_mean": null
+    },
+    {
+      "step": 10,
+      "loss": 0.4673,
+      "wall_s": 0.4,
+      "erank_mean": 4.741707911106668,
+      "erank_per_adapter": {
+        "Wq": 4.974,
+        "Wv": 3.7584,
+        "Wo": 3.8477,
+        "W1": 6.3868
+      },
+      "ovlp_L_vs_step5_mean": 0.8556016302161787
+    },
+    {
+      "step": 20,
+      "loss": 0.509,
+      "wall_s": 0.7,
+      "erank_mean": 4.260871683874485,
+      "erank_per_adapter": {
+        "Wq": 4.6173,
+        "Wv": 3.6059,
+        "Wo": 3.4649,
+        "W1": 5.3554
+      },
+      "ovlp_L_vs_step5_mean": 0.6727355379298362
+    },
+    {
+      "step": 30,
+      "loss": 0.4786,
+      "wall_s": 1.1,
+      "erank_mean": 3.943411710982933,
+      "erank_per_adapter": {
+        "Wq": 4.4745,
+        "Wv": 3.4246,
+        "Wo": 3.1751,
+        "W1": 4.6994
+      },
+      "ovlp_L_vs_step5_mean": 0.5982352874196031
+    },
+    {
+      "step": 40,
+      "loss": 0.3906,
+      "wall_s": 1.4,
+      "erank_mean": 3.7192748612253106,
+      "erank_per_adapter": {
+        "Wq": 4.1426,
+        "Wv": 3.3617,
+        "Wo": 3.055,
+        "W1": 4.3178
+      },
+      "ovlp_L_vs_step5_mean": 0.5456610949809932
+    },
+    {
+      "step": 50,
+      "loss": 0.4767,
+      "wall_s": 1.8,
+      "erank_mean": 3.5402348983249787,
+      "erank_per_adapter": {
+        "Wq": 3.7749,
+        "Wv": 3.2027,
+        "Wo": 2.9737,
+        "W1": 4.2096
+      },
+      "ovlp_L_vs_step5_mean": 0.5073309896795171
+    },
+    {
+      "step": 60,
+      "loss": 0.4754,
+      "wall_s": 2.2,
+      "erank_mean": 3.436361735967119,
+      "erank_per_adapter": {
+        "Wq": 3.3623,
+        "Wv": 3.2398,
+        "Wo": 2.9587,
+        "W1": 4.1846
+      },
+      "ovlp_L_vs_step5_mean": 0.4887317913939656
+    },
+    {
+      "step": 70,
+      "loss": 0.5646,
+      "wall_s": 2.6,
+      "erank_mean": 3.3906467553875306,
+      "erank_per_adapter": {
+        "Wq": 3.151,
+        "Wv": 3.2373,
+        "Wo": 2.9185,
+        "W1": 4.2557
+      },
+      "ovlp_L_vs_step5_mean": 0.4707139901442041
+    },
+    {
+      "step": 80,
+      "loss": 0.3452,
+      "wall_s": 3.0,
+      "erank_mean": 3.3878128674787096,
+      "erank_per_adapter": {
+        "Wq": 3.0055,
+        "Wv": 3.3557,
+        "Wo": 2.9132,
+        "W1": 4.2769
+      },
+      "ovlp_L_vs_step5_mean": 0.45208966263675016
+    },
+    {
+      "step": 90,
+      "loss": 0.664,
+      "wall_s": 3.4,
+      "erank_mean": 3.393857795307226,
+      "erank_per_adapter": {
+        "Wq": 2.8029,
+        "Wv": 3.5444,
+        "Wo": 2.9135,
+        "W1": 4.3146
+      },
+      "ovlp_L_vs_step5_mean": 0.44487383080500076
+    },
+    {
+      "step": 100,
+      "loss": 0.6485,
+      "wall_s": 3.8,
+      "erank_mean": 3.3569165034746424,
+      "erank_per_adapter": {
+        "Wq": 2.6264,
+        "Wv": 3.6068,
+        "Wo": 2.895,
+        "W1": 4.2995
+      },
+      "ovlp_L_vs_step5_mean": 0.43608872667203596,
+      "acc": {
+        "easy": 1.0,
+        "medium": 0.312,
+        "hard": 0.219,
+        "all": 0.51
+      }
+    },
+    {
+      "step": 110,
+      "loss": 0.4074,
+      "wall_s": 4.3,
+      "erank_mean": 3.309845385161875,
+      "erank_per_adapter": {
+        "Wq": 2.5388,
+        "Wv": 3.5534,
+        "Wo": 2.8816,
+        "W1": 4.2655
+      },
+      "ovlp_L_vs_step5_mean": 0.43164272731830716
+    },
+    {
+      "step": 120,
+      "loss": 0.786,
+      "wall_s": 4.7,
+      "erank_mean": 3.3011712739513612,
+      "erank_per_adapter": {
+        "Wq": 2.3426,
+        "Wv": 3.6215,
+        "Wo": 3.008,
+        "W1": 4.2326
+      },
+      "ovlp_L_vs_step5_mean": 0.4267701377406561
+    },
+    {
+      "step": 130,
+      "loss": 0.3709,
+      "wall_s": 5.0,
+      "erank_mean": 3.295685975144326,
+      "erank_per_adapter": {
+        "Wq": 2.3639,
+        "Wv": 3.7402,
+        "Wo": 3.0509,
+        "W1": 4.0277
+      },
+      "ovlp_L_vs_step5_mean": 0.43120664457721125
+    },
+    {
+      "step": 140,
+      "loss": 0.4784,
+      "wall_s": 5.4,
+      "erank_mean": 3.399874692114027,
+      "erank_per_adapter": {
+        "Wq": 2.5442,
+        "Wv": 3.7946,
+        "Wo": 3.1662,
+        "W1": 4.0945
+      },
+      "ovlp_L_vs_step5_mean": 0.43596801299511323
+    },
+    {
+      "step": 150,
+      "loss": 0.3115,
+      "wall_s": 5.7,
+      "erank_mean": 3.4878771810987867,
+      "erank_per_adapter": {
+        "Wq": 2.6854,
+        "Wv": 3.8141,
+        "Wo": 3.2317,
+        "W1": 4.2203
+      },
+      "ovlp_L_vs_step5_mean": 0.43841507610101726
+    },
+    {
+      "step": 160,
+      "loss": 0.3582,
+      "wall_s": 6.1,
+      "erank_mean": 3.5445800540451167,
+      "erank_per_adapter": {
+        "Wq": 2.7089,
+        "Wv": 3.8675,
+        "Wo": 3.2384,
+        "W1": 4.3635
+      },
+      "ovlp_L_vs_step5_mean": 0.43560561915890406
+    },
+    {
+      "step": 170,
+      "loss": 0.4689,
+      "wall_s": 6.5,
+      "erank_mean": 3.560943203281764,
+      "erank_per_adapter": {
+        "Wq": 2.6087,
+        "Wv": 3.9659,
+        "Wo": 3.324,
+        "W1": 4.3452
+      },
+      "ovlp_L_vs_step5_mean": 0.4281135046988983
+    },
+    {
+      "step": 180,
+      "loss": 0.4433,
+      "wall_s": 6.9,
+      "erank_mean": 3.5615121763688125,
+      "erank_per_adapter": {
+        "Wq": 2.5639,
+        "Wv": 4.0962,
+        "Wo": 3.3276,
+        "W1": 4.2583
+      },
+      "ovlp_L_vs_step5_mean": 0.4224811033991093
+    },
+    {
+      "step": 190,
+      "loss": 0.4241,
+      "wall_s": 7.3,
+      "erank_mean": 3.560089103988281,
+      "erank_per_adapter": {
+        "Wq": 2.6684,
+        "Wv": 4.1293,
+        "Wo": 3.2467,
+        "W1": 4.196
+      },
+      "ovlp_L_vs_step5_mean": 0.4197226628054824
+    },
+    {
+      "step": 200,
+      "loss": 0.5963,
+      "wall_s": 7.6,
+      "erank_mean": 3.573438420557687,
+      "erank_per_adapter": {
+        "Wq": 2.7157,
+        "Wv": 4.1186,
+        "Wo": 3.3278,
+        "W1": 4.1316
+      },
+      "ovlp_L_vs_step5_mean": 0.4153797018488074,
+      "acc": {
+        "easy": 1.0,
+        "medium": 0.281,
+        "hard": 0.25,
+        "all": 0.51
+      }
+    }
+  ],
+  "final_acc": {
+    "easy": 1.0,
+    "medium": 0.2812,
+    "hard": 0.25,
+    "all": 0.5104
+  },
+  "wall_s": 8.0
+}
